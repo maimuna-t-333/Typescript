@@ -92,4 +92,26 @@
 
 // NB: array is a type of object
 
+// let a:any[]=[];
+
+// a.push(7);
+// a.push("sumit");
+
+// const myFunc=()=>{
+//     console.log("hello")
+// }
+
+// let myFunc: Function;
+
+// myFunc=()=>{
+//     console.log("hello")
+// }
+
+// const myFunc=(a:number, b:number, c:string="true"): number=>{
+//     // console.log(c);
+//     // console.log(`Hello ${a} and ${b}`);
+//     return a+b;
+// }
+
+// myFunc(10, 23, "false");
 
