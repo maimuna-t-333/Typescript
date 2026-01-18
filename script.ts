@@ -115,3 +115,22 @@
 
 // myFunc(10, 23, "false");
 
+type StringOrNum=string | number;
+type UserType={
+        name: string,
+        age:number
+    }
+
+const userDetails=(
+    id: StringOrNum,
+    user: UserType
+)=>{
+    console.log(`User id is ${id}, name is ${user.name} and age is ${user.age}`);
+};
+
+const sayHello=(
+    user:UserType
+)=>{
+    console.log(`Hello ${user.age > 50 ? "Sir" : "Mr."} ${user.name}`);
+};
+
