@@ -176,26 +176,33 @@
 // -----------
 
 
-class player{
-    name:string;
-    age:number;
-    country:string;
+class player {
 
-    constructor(n:string, a:number, c:string){
-        this.name=n;
-        this.age=a;
-        this.country=c;
+
+    constructor(
+        public name: string,
+        private age: number,
+        readonly country: string
+    ) {
+
     }
 
-    play(){
+    play() {
         console.log(`${this.name} from ${this.country} is playing`);
     }
 }
 
-const mashrafi=new player("mashrafi", 43, "bangladeshi");
-const sakib=new player("sakib", 34, "bangladeshi");
+const mashrafi = new player("mashrafi", 43, "bangladeshi");
+const sakib = new player("sakib", 34, "bangladeshi");
 
-const players:player[]=[];
+sakib.name = "mashrafi";
+sakib.age = 40;
+sakib.country = "england";
+
+console.log(sakib.name);
+console.log(sakib.age);
+
+const players: player[] = [];
 
 players.push(mashrafi);
 players.push(sakib);
