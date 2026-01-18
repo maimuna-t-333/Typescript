@@ -158,15 +158,47 @@
 
 // console.log(calculation(5,6,"minus"))
 
-let userDetails:(id:number | string, userInfo:{
-    name:string,
-    age:number
-})=>void;
 
-userDetails=(id:number | string, user:{
-   name:string,
-    age:number 
-})=>{
+// ---------
 
+// let userDetails:(id:number | string, userInfo:{
+//     name:string,
+//     age:number
+// })=>void;
+
+// userDetails=(id:number | string, user:{
+//    name:string,
+//     age:number 
+// })=>{
+
+// }
+
+// -----------
+
+
+class player{
+    name:string;
+    age:number;
+    country:string;
+
+    constructor(n:string, a:number, c:string){
+        this.name=n;
+        this.age=a;
+        this.country=c;
+    }
+
+    play(){
+        console.log(`${this.name} from ${this.country} is playing`);
+    }
 }
+
+const mashrafi=new player("mashrafi", 43, "bangladeshi");
+const sakib=new player("sakib", 34, "bangladeshi");
+
+const players:player[]=[];
+
+players.push(mashrafi);
+players.push(sakib);
+
+
 

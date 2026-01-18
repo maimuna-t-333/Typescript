@@ -100,8 +100,31 @@
 //     }
 // }
 // console.log(calculation(5,6,"minus"))
-let userDetails;
-userDetails = (id, user) => {
-};
+// ---------
+// let userDetails:(id:number | string, userInfo:{
+//     name:string,
+//     age:number
+// })=>void;
+// userDetails=(id:number | string, user:{
+//    name:string,
+//     age:number 
+// })=>{
+// }
+// -----------
+class player {
+    constructor(n, a, c) {
+        this.name = n;
+        this.age = a;
+        this.country = c;
+    }
+    play() {
+        console.log(`${this.name} from ${this.country} is playing`);
+    }
+}
+const mashrafi = new player("mashrafi", 43, "bangladeshi");
+const sakib = new player("sakib", 34, "bangladeshi");
+const players = [];
+players.push(mashrafi);
+players.push(sakib);
 export {};
 //# sourceMappingURL=script.js.map
