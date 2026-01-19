@@ -113,7 +113,8 @@
 // -----------
 import { player } from "./classes/player.js";
 const mashrafi = new player("mashrafi", 43, "bangladeshi");
-const sakib = new player("sakib", 34, "bangladeshi");
+let sakib;
+sakib = new player("sakib", 34, "bangladeshi");
 // sakib.name = "mashrafi";
 // sakib.age = 40;
 // sakib.country = "england";
@@ -123,4 +124,25 @@ const players = [];
 players.push(mashrafi);
 players.push(sakib);
 // ---------------
+// interface RectangleOptions{
+//     width:number;
+//     length:number;
+// }
+// function drawRectangle(option:
+//      RectangleOptions
+// ){
+//     let width=option.width;
+//     let length=option.length;
+// }
+// // drawRectangle({
+// //     width:30,
+// //     length:20
+// // })
+// let threeDoptions={
+//     width:30,
+//     length:20,
+//     heigth:10
+// }
+// drawRectangle(threeDoptions)
+1;
 //# sourceMappingURL=script.js.map

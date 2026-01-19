@@ -177,9 +177,12 @@
 
 
 import {player} from "./classes/player.js";
+import type { isPlayer } from "./interfaces/isPlayer.js";
 
 const mashrafi = new player("mashrafi", 43, "bangladeshi");
-const sakib = new player("sakib", 34, "bangladeshi");
+let sakib:isPlayer;
+
+sakib=new player("sakib", 34, "bangladeshi");
 
 // sakib.name = "mashrafi";
 // sakib.age = 40;
@@ -188,12 +191,38 @@ const sakib = new player("sakib", 34, "bangladeshi");
 console.log(sakib.name);
 // console.log(sakib.age);
 
-const players: player[] = [];
+const players: isPlayer[] = [];
 
 players.push(mashrafi);
 players.push(sakib);
 
-
-
 // ---------------
 
+// interface RectangleOptions{
+//     width:number;
+//     length:number;
+// }
+
+// function drawRectangle(option:
+//      RectangleOptions
+// ){
+//     let width=option.width;
+//     let length=option.length;
+
+// }
+
+// // drawRectangle({
+// //     width:30,
+// //     length:20
+// // })
+
+// let threeDoptions={
+//     width:30,
+//     length:20,
+//     heigth:10
+// }
+
+// drawRectangle(threeDoptions)
+
+
+1
