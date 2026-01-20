@@ -176,25 +176,25 @@
 // -----------
 
 
-import {player} from "./classes/player.js";
-import type { isPlayer } from "./interfaces/isPlayer.js";
+// import {player} from "./classes/player.js";
+// import type { isPlayer } from "./interfaces/isPlayer.js";
 
-const mashrafi = new player("mashrafi", 43, "bangladeshi");
-let sakib:isPlayer;
+// const mashrafi = new player("mashrafi", 43, "bangladeshi");
+// let sakib:isPlayer;
 
-sakib=new player("sakib", 34, "bangladeshi");
+// sakib=new player("sakib", 34, "bangladeshi");
 
-// sakib.name = "mashrafi";
-// sakib.age = 40;
-// sakib.country = "england";
+// // sakib.name = "mashrafi";
+// // sakib.age = 40;
+// // sakib.country = "england";
 
-console.log(sakib.name);
-// console.log(sakib.age);
+// console.log(sakib.name);
+// // console.log(sakib.age);
 
-const players: isPlayer[] = [];
+// const players: isPlayer[] = [];
 
-players.push(mashrafi);
-players.push(sakib);
+// players.push(mashrafi);
+// players.push(sakib);
 
 // ---------------
 
@@ -223,6 +223,47 @@ players.push(sakib);
 // }
 
 // drawRectangle(threeDoptions)
+
+
+// ------------
+
+// const addId = <T extends {
+//     name: string;
+//     age: number;
+// }>(obj: T) => {
+//     let id = Math.floor(Math.random() * 100);
+//     return { ...obj, id };
+// }
+
+// let user = addId({
+//     name: "Mashrafi",
+//     age: 40,
+//     country: "Bangladesh"
+// })
+
+
+// addId(user);
+
+
+// ------
+
+interface APIResponse<T>{
+    status:number;
+    type:string;
+    data:T;
+}
+
+const response1:APIResponse<object>={
+    status:300,
+    type:"average",
+    data:{
+        name:"panda",
+        color:"black and white"
+    }
+}
+
+
+
 
 
 1
