@@ -264,24 +264,35 @@
 
 // ----------
 
-enum ResponseType{SUCCESS, FAILURE, UNAUTHENTICATED, FORBIDEN}
+// enum ResponseType{SUCCESS, FAILURE, UNAUTHENTICATED, FORBIDEN}
 
-interface APIResponse<T>{
-    status:number;
-    type:ResponseType;
-    data:T;
-}
+// interface APIResponse<T>{
+//     status:number;
+//     type:ResponseType;
+//     data:T;
+// }
 
-const response1:APIResponse<object>={
-    status:300,
-    type:ResponseType.FAILURE,
-    data:{
-        name:"panda",
-        color:"black and white"
-    }
-}
+// const response1:APIResponse<object>={
+//     status:300,
+//     type:ResponseType.FAILURE,
+//     data:{
+//         name:"panda",
+//         color:"black and white"
+//     }
+// }
 
-console.log(response1);
+// console.log(response1);
+
+// -----------
+
+// let a = [1, "hello", { p: 7 }];
+// let b: [number, string, object] = [1, "world", { w: 1 }];
+
+// b[1]=1
+// you have to put input order wise 
+
+
+
 
 
 
