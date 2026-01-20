@@ -247,20 +247,41 @@
 
 // ------
 
+// interface APIResponse<T>{
+//     status:number;
+//     type:string;
+//     data:T;
+// }
+
+// const response1:APIResponse<object>={
+//     status:300,
+//     type:"average",
+//     data:{
+//         name:"panda",
+//         color:"black and white"
+//     }
+// }
+
+// ----------
+
+enum ResponseType{SUCCESS, FAILURE, UNAUTHENTICATED, FORBIDEN}
+
 interface APIResponse<T>{
     status:number;
-    type:string;
+    type:ResponseType;
     data:T;
 }
 
 const response1:APIResponse<object>={
     status:300,
-    type:"average",
+    type:ResponseType.FAILURE,
     data:{
         name:"panda",
         color:"black and white"
     }
 }
+
+console.log(response1);
 
 
 
